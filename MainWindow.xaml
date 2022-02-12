@@ -1,0 +1,19 @@
+﻿<Window x:Class="Lacia_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lacia_GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Black">
+    <StackPanel Name="AI">
+        <Button Name="Start" PreviewMouseLeftButtonUp="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Margin="3px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal" Opacity="0.7">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="Status" Width="200" Height="30px" FontSize="15" Foreground="White" Opacity="50" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50"  />
+
+    </StackPanel>
+</Window>
