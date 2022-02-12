@@ -13,7 +13,7 @@
             </Button.Effect>
         </Button>
         <Label x:Name="Status" Width="200" Height="30px" FontSize="15" Foreground="White" Opacity="50" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50"  />
+        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged" />
 
     </StackPanel>
 </Window>
