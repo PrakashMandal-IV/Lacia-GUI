@@ -12,7 +12,8 @@ namespace Lacia_GUI
     class Lacia
     {   
          Greet greet = new Greet();
-         protected bool Check { get; set; } 
+         Browser br = new Browser();
+         protected bool Check { get; set; }        
         public void LaciaVoice(string input)
         {
             SpeechSynthesizer talk = new SpeechSynthesizer();
@@ -23,13 +24,14 @@ namespace Lacia_GUI
         }
         public void Laciainit()
         {
-            Check = false;
+            Check = false;           
             LaciaVoice("Hello Sir, " + greet.DoGreet()+ ", This is Lacia, your Assistant, How can i help you ");
         }
         public bool LaciaBody(string input)
         {
             
             bool matched = false;
+           
             if (!Check)
             {
                 Thread.Sleep(1000);
@@ -47,6 +49,12 @@ namespace Lacia_GUI
                 {
                     LaciaVoice("My Name is Lacia. Virtual Assistant. Just a sample for now");
                     matched = true;
+                }
+                else if (input.Contains("open"))  
+                {
+                    Thread.Sleep(5000);
+                        br.Search(input);                      
+                        matched = true;                                                       
                 }
                 else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off")) && greet.DoGreet() == "Good Evening")
                 {
