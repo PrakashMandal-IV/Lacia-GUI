@@ -19,20 +19,19 @@ namespace Lacia_GUI
 {
     public partial class MainWindow : Window
     {
-        bool started = false;
+        bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();
-        
-        
         public MainWindow()
         {
             InitializeComponent();
             Status.Content = "Click Start";
-
+            
+            
         }
         private async void Start_Click(object sender, RoutedEventArgs e)
         {
             
-            if(!started)
+            if (!started)
             {
                 started = true;
                 await Task.Run(() => lacia.Laciainit());
@@ -41,20 +40,29 @@ namespace Lacia_GUI
         }
         private async void Input_TextChanged(object sender, TextChangedEventArgs e)
         {
+            // START THE COMMANDING
             if (started)
             {
+                
                 string input = Input.Text;
-                await Task.Run(() =>
-                {                  
-                    if(lacia.LaciaBody(input))
-                    {
-                        this.Dispatcher.Invoke(() =>
-                        {
-                            Input.Text = null;
-                        });
-                    }
-                    });               
+                await Task.Run(() => Lacia(input));
+
             }
-        }       
+        }
+        public void Lacia(string input)
+        {
+            if (input != null)
+            {
+                if (lacia.LaciaBody(input))
+                {
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        Input.Clear();
+                        Input.Text = null;
+                    });
+                }
+            }
+        }
+        
     }
 }
