@@ -11,23 +11,30 @@ namespace Lacia_GUI
     class Browser
     {
 
-        public void Search(string input)
+        public string Search(string input)
         {
+            string check = input.Replace("open",null).Replace("google",null).Replace("youtube", null).Replace("and",null).Replace("search",null).Replace(" ",null);
+
+            string speak= "";
             if (input.Contains("google"))
             {
-                System.Diagnostics.Process.Start("https://www.google.com");
+                string google = "https://www.google.com/search?q=" + check;
+                System.Diagnostics.Process.Start(google);
+                speak = "searching google";
             }
-            else if (input.Contains("youtube"))
+            else if (input.Contains("youtube") && (check == null))
             {
                 System.Diagnostics.Process.Start("https://www.youtube.com");
+                speak = "opening youtube";
             }
             else if (input.Contains("spotify"))
             {
                 System.Diagnostics.Process.Start(@"C:\Users\Prakash\AppData\Roaming\Spotify\Spotify.exe");
+                speak = "enjoy the songs";
             }
             else if (input.Contains("github"))
             {
-                System.Diagnostics.Process.Start(" https://github.com");
+                System.Diagnostics.Process.Start("https://github.com");
             }
             else if (input.Contains("whatsapp") || input.Contains("whats app") || input.Contains("what'sapp") || input.Contains("what's app"))
             {
@@ -40,6 +47,7 @@ namespace Lacia_GUI
             else if(input.Contains("discord"))
             {
                 System.Diagnostics.Process.Start(@"C:\Users\Prakash\Desktop\Discord.lnk");
+                speak = "opening discord";
             }
             else if (input.Contains("my art"))
             {
@@ -49,6 +57,7 @@ namespace Lacia_GUI
             {
                 System.Diagnostics.Process.Start(@"G:\Pearlabyss\BlackDesert\BlackDesertLauncher.exe");
             }
+            return speak;
         }
     }
 }

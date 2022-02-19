@@ -24,7 +24,7 @@ namespace Lacia_GUI
         public MainWindow()
         {
             InitializeComponent();
-            Status.Content = "Click Start";
+            Status.Content = "Lacia";
             
             
         }
@@ -40,17 +40,22 @@ namespace Lacia_GUI
         }
         private async void Input_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // START THE COMMANDING
+            
             if (started)
             {
                 
                 string input = Input.Text;
-                await Task.Run(() => Lacia(input));
+                await Task.Run(() => {
+                    int inc = 1000;
+                    Thread.Sleep(inc+1000);
+                    Lacia(input);
+                    });
 
             }
         }
         public void Lacia(string input)
         {
+           
             if (input != null)
             {
                 if (lacia.LaciaBody(input))

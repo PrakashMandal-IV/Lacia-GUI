@@ -5,14 +5,19 @@ using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Media;
+using System.IO;
+using Lacia_GUI.Classes;
 
 namespace Lacia_GUI
 {
     
     class Lacia
-    {   
+    {
+         Time time = new Time();
          Greet greet = new Greet();
          Browser br = new Browser();
+         Speaker speak = new Speaker();      
          protected bool Check { get; set; }        
         public void LaciaVoice(string input)
         {
@@ -23,9 +28,8 @@ namespace Lacia_GUI
 
         }
         public void Laciainit()
-        {
-            Check = false;           
-            LaciaVoice("Hello Sir, " + greet.DoGreet()+ ", This is Lacia, your Assistant, How can i help you ");
+        {            
+            speak.Welcome();             
         }
         public bool LaciaBody(string input)
         {
@@ -37,7 +41,7 @@ namespace Lacia_GUI
                 Thread.Sleep(1000);
                 if (input.Contains("time"))
                 {
-                    LaciaVoice("It's," + DateTime.Now.ToString("h:mm tt"));
+                    time.Timespell();
                     matched = true;
                 }
                 else if (input.Contains("date"))
@@ -53,10 +57,10 @@ namespace Lacia_GUI
                 else if (input.Contains("open"))  
                 {
                     Thread.Sleep(5000);
-                        br.Search(input);                      
+                       LaciaVoice(br.Search(input));                      
                         matched = true;                                                       
                 }
-                else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off")) && greet.DoGreet() == "Good Evening")
+                else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off")))
                 {
                     LaciaVoice("Going off, Good Night Sir");
                     matched = true;
@@ -69,11 +73,7 @@ namespace Lacia_GUI
                     matched = true;
                     Check=true;
                     GC.Collect();
-                }
-                else
-                {
-
-                }
+                }              
             }
             else
             {
@@ -83,8 +83,7 @@ namespace Lacia_GUI
                     LaciaVoice(welcome.Welcome() + ",   how can i help you");
                     matched = true;
                     Check = false;
-                }
-                else { }
+                }        
             }       
             return matched;
         }

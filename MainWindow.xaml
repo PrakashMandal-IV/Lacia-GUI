@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lacia_GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="Black">
+        Title="Lacia" Height="450" Width="800" Background="Black" Visibility="Visible">
+
+
     <StackPanel Name="AI">
-        
-        <Label x:Name="Status" Width="200" Height="30px" FontSize="15" Foreground="White" Opacity="50" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged" />
+
+        <Label x:Name="Status" Width="200" Content="Lacia" Height="60px" FontSize="30" Foreground="White"  Opacity="50" FontFamily="Haettenschweiler" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged"  />
         <Button Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Margin="3px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
+
     </StackPanel>
 </Window>

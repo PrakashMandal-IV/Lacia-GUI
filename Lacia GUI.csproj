@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Figma icons\</PublishUrl>
+    <PublishUrl>D:\Lacia\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,9 +25,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Lacia Voice Assistant</ProductName>
+    <PublisherName>Prakash Mandal</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -60,12 +66,29 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Lacia GUI_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>L.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -85,7 +108,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Browser.cs" />
+    <Compile Include="Classes\Counter.cs" />
+    <Compile Include="Classes\Time.cs" />
     <Compile Include="RandomWelcome.cs" />
+    <Compile Include="Speaker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -120,6 +146,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Lacia GUI_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,6 +169,118 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="words\website.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="L.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelcomeSir.wav" />
+    <None Include="Resources\HowCanIHelpYou.wav" />
+    <None Include="Resources\GoodEvening.wav" />
+    <None Include="Resources\GoodAfternoon.wav" />
+    <None Include="Resources\hello.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelMorning.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelAfternoon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelEvening.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AM.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Its.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

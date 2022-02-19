@@ -10,7 +10,7 @@ namespace Lacia_GUI
     {
         
                 
-        public string DoGreet()
+        public int DoGreet()
         {
             DateTime current = DateTime.Parse(DateTime.Now.ToString("h tt"));
             DateTime morning = DateTime.Parse("12 PM");
@@ -25,21 +25,21 @@ namespace Lacia_GUI
 
             int e1 = DateTime.Compare(current, afternoon); //1
             int e2 = DateTime.Compare(current, evening); //-1
-            string result;
+            int result;
             if (m1 > 0 && m2 < 0)
             {
-                result = "Good morning";
+                result = 1;
             }
             else if (a1 > 0 && a2 < 0)
             {
-                result = "Good Afternoon";
+                result = 2;
             }
             else if (e1 > 0 && e2 < 0)
             {
-                result = "Good Evening";
+                result = 3;
             }
             else {
-                result = " Good Evening";
+                result = 4;
             }
             return result;
         }
