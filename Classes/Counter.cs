@@ -16,9 +16,14 @@ namespace Lacia_GUI.Classes
             {
                 Countninteen(number);
             }
-            else if(number >20)
+            else if(number >=20 && number<100)
             {
-                tense(number);
+                int FirstDigit = number/ 10;
+                int startingNumber = FirstDigit * 10;
+                float fraction = ((number / 10f) - FirstDigit) * 10;
+                int lastdigit = Convert.ToInt32(fraction);
+                tense(startingNumber);
+                Countninteen(lastdigit);
             }
         }
 

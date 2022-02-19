@@ -109,6 +109,8 @@
     </ApplicationDefinition>
     <Compile Include="Browser.cs" />
     <Compile Include="Classes\Counter.cs" />
+    <Compile Include="Classes\Date.cs" />
+    <Compile Include="Classes\Month.cs" />
     <Compile Include="Classes\Time.cs" />
     <Compile Include="RandomWelcome.cs" />
     <Compile Include="Speaker.cs" />
@@ -281,6 +283,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Its.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\April.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aug.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dec.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feb.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jul.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jun.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\March.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\May.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nov.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oct.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lacia.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offgreet.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\It%27s open.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlwaysAwake.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atyourservice.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IamUp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IneverSleep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaitForYou.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itsopen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotify.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discord.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Creator.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Afternoon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evening.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morning.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesIcan.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

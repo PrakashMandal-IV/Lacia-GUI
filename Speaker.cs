@@ -22,26 +22,26 @@ namespace Lacia_GUI
             switch (greet.DoGreet()) {
                 case 1: 
                     {
-                         speak = new SoundPlayer(Properties.Resources.WelMorning);
+                         speak = new SoundPlayer(Properties.Resources.Morning);
                         speak.PlaySync();
                     } break;
                    
                 case 2:
                     {
-                        speak = new SoundPlayer(Properties.Resources.WelAfternoon);
+                        speak = new SoundPlayer(Properties.Resources.Afternoon);
                         speak.PlaySync();
                     }
                     break;
                 case 3:
                     {
-                        speak = new SoundPlayer(Properties.Resources.WelEvening);
+                        speak = new SoundPlayer(Properties.Resources.Evening);
                         speak.PlaySync();
                     }break;                    
                    
 
                 case 4:
                     {
-                        speak = new SoundPlayer(Properties.Resources.WelEvening);
+                        speak = new SoundPlayer(Properties.Resources.Evening);
                         speak.PlaySync();
                     }
                     break;

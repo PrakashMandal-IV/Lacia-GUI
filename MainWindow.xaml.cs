@@ -50,7 +50,6 @@ namespace Lacia_GUI
                     Thread.Sleep(inc+1000);
                     Lacia(input);
                     });
-
             }
         }
         public void Lacia(string input)

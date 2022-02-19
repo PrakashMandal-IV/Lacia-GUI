@@ -21,48 +21,22 @@ namespace Lacia_GUI.Classes
             {
                 int Hour = DateTime.Now.Hour;
                 hour = Hour - 12;
-            }
-            else { }
-            
-            if(minute <= 20)
+            }          
+            SoundPlayer its = new SoundPlayer(Properties.Resources.Its);
+            its.PlaySync();
+            time.Spell(hour);
+            time.Spell(minute);
+            if (daynight == "AM")
             {
-                SoundPlayer its = new SoundPlayer(Properties.Resources.Its);
-                its.PlaySync();
-                time.Spell(hour);
-                time.Spell(minute);
-                if(daynight=="AM")
-                {
-                    player= new SoundPlayer(Properties.Resources.AM);
-                    player.Play();
-                }
-                else
-                {
-                   player = new SoundPlayer(Properties.Resources.Pm);
-                    player.Play();
-                }
+                player = new SoundPlayer(Properties.Resources.AM);
+                player.Play();
             }
             else
             {
-                int FirstDigit = minute / 10;
-                int finalMinute = FirstDigit * 10;
-                float fraction = ((minute / 10f) - FirstDigit) * 10;
-                int show = Convert.ToInt32(fraction);
-                SoundPlayer its = new SoundPlayer(Properties.Resources.Its);
-                its.PlaySync();
-                time.Spell(hour);
-                time.Spell(finalMinute);
-                time.Spell(show);
-                if (daynight == "AM")
-                {
-                    player = new SoundPlayer(Properties.Resources.AM);
-                    player.Play();
-                }
-                else
-                {
-                    player = new SoundPlayer(Properties.Resources.Pm);
-                    player.Play();
-                }
+                player = new SoundPlayer(Properties.Resources.Pm);
+                player.Play();
             }
+            
 
         }
       

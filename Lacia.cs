@@ -17,7 +17,8 @@ namespace Lacia_GUI
          Time time = new Time();
          Greet greet = new Greet();
          Browser br = new Browser();
-         Speaker speak = new Speaker();      
+         Speaker speak = new Speaker();
+         SoundPlayer sound;
          protected bool Check { get; set; }        
         public void LaciaVoice(string input)
         {
@@ -46,12 +47,26 @@ namespace Lacia_GUI
                 }
                 else if (input.Contains("date"))
                 {
-                    LaciaVoice("It's," + DateTime.Now.ToString("dd/MM/yyyy"));
+                   Date date = new Date();
+                    date.GetDate();
                     matched = true;
                 }
                 else if (input.Contains("who are you") || input.Contains("tell me about yourself"))
                 {
-                    LaciaVoice("My Name is Lacia. Virtual Assistant. Just a sample for now");
+                    sound = new SoundPlayer(Properties.Resources.Lacia);
+                    sound.Play();
+                    matched = true;
+                }
+                else if (input.Contains("who")&&input.Contains("created")&&input.Contains("you"))
+                {
+                    sound = new SoundPlayer(Properties.Resources.Creator);
+                    sound.Play();
+                    matched = true;
+                }
+                else if (input.Contains("lacia") && input.Contains("can") && input.Contains("you") && input.Contains("hear") && input.Contains("me"))
+                {
+                    sound = new SoundPlayer(Properties.Resources.YesIcan);
+                    sound.Play();
                     matched = true;
                 }
                 else if (input.Contains("open"))  
@@ -60,16 +75,18 @@ namespace Lacia_GUI
                        LaciaVoice(br.Search(input));                      
                         matched = true;                                                       
                 }
-                else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off")))
+                else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off"))&& (greet.DoGreet()==4))
                 {
-                    LaciaVoice("Going off, Good Night Sir");
+                    sound = new SoundPlayer(Properties.Resources.offgreet);
+                    sound.Play();
                     matched = true;
                     Check = true;
                     GC.Collect();
                 }
                 else if (input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off"))
                 {
-                    LaciaVoice("Going off, Have a nice day sir");
+                    sound = new SoundPlayer(Properties.Resources.off);
+                    sound.Play();
                     matched = true;
                     Check=true;
                     GC.Collect();
@@ -80,7 +97,7 @@ namespace Lacia_GUI
               if (input.Contains("lacia") && (input.Contains("wakeup") || input.Contains("wake up")))
                 {
                     RandomWelcome welcome = new RandomWelcome();  //random welcome speech
-                    LaciaVoice(welcome.Welcome() + ",   how can i help you");
+                    welcome.Welcome();
                     matched = true;
                     Check = false;
                 }        
