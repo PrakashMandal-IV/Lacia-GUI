@@ -12,6 +12,7 @@ namespace Lacia_GUI
                 
         public int DoGreet()
         {
+            string time = DateTime.Now.ToString("tt");
             DateTime current = DateTime.Parse(DateTime.Now.ToString("h tt"));
             DateTime morning = DateTime.Parse("12 PM");
             DateTime afternoon = DateTime.Parse("4 PM");
@@ -26,6 +27,23 @@ namespace Lacia_GUI
             int e1 = DateTime.Compare(current, afternoon); //1
             int e2 = DateTime.Compare(current, evening); //-1
             int result;
+            if(time.Contains("AM"))
+            {
+                result = 1;
+            }
+            else
+            {
+                if(current>=afternoon)
+                {
+                    result = 3;
+                }
+                else
+                {
+                    result = 2;
+                }
+
+            }
+            /*
             if (m1 > 0 && m2 < 0)
             {
                 result = 1;
@@ -38,9 +56,10 @@ namespace Lacia_GUI
             {
                 result = 3;
             }
-            else {
-                result = 4;
-            }
+            else
+            {
+                result = 3;
+            }*/
             return result;
         }
         

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Afternoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Afternoon.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -136,6 +139,12 @@
   <data name="Aug" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aug.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="CalInit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CalInit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CantDoThat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CantDoThat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Creator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Creator.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -145,17 +154,38 @@
   <data name="Discord" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Discord.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Dividing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dividing.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Evening" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Evening.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Factorial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Factorial.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Feb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Feb.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="GotIt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GotIt.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IamAlgorithm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IamAlgorithm.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="IamUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IamUp.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Idonot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idonot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Idontwatchmovies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idontwatchmovies.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="IneverSleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IneverSleep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IsaidIdontMovies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IsaidIdontMovies.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Its" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Its.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -175,8 +205,14 @@
   <data name="Jun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jun.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="KeyPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeyPress.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Lacia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lacia.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LikeGames" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeGames.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="March" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\March.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -186,6 +222,12 @@
   </data>
   <data name="Morning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Morning.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Multiply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Multiply.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NotYourConcern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NotYourConcern.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Nov" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nov.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -208,11 +250,26 @@
   <data name="spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spotify.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Squaring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Squaring.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Subtract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subtract.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TheAnswerIs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TheAnswerIs.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TodayIs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TodayIs.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="WaitForYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WaitForYou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="YesIcan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YesIcan.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YesIdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YesIdo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

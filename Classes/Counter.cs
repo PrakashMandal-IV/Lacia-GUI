@@ -25,6 +25,11 @@ namespace Lacia_GUI.Classes
                 tense(startingNumber);
                 Countninteen(lastdigit);
             }
+            else if(number == 100)
+            {
+                speak = new SoundPlayer(Properties.Resources._100);
+                speak.PlaySync();
+            }
         }
 
         private void Countninteen(int input)

@@ -45,9 +45,7 @@ namespace Lacia_GUI
             {
                 
                 string input = Input.Text;
-                await Task.Run(() => {
-                    int inc = 1000;
-                    Thread.Sleep(inc+1000);
+                await Task.Run(() => {                   
                     Lacia(input);
                     });
             }

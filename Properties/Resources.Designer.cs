@@ -315,6 +315,15 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Add {
+            get {
+                return ResourceManager.GetStream("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Afternoon {
             get {
                 return ResourceManager.GetStream("Afternoon", resourceCulture);
@@ -369,6 +378,24 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream CalInit {
+            get {
+                return ResourceManager.GetStream("CalInit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream CantDoThat {
+            get {
+                return ResourceManager.GetStream("CantDoThat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Creator {
             get {
                 return ResourceManager.GetStream("Creator", resourceCulture);
@@ -396,9 +423,27 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Dividing {
+            get {
+                return ResourceManager.GetStream("Dividing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Evening {
             get {
                 return ResourceManager.GetStream("Evening", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Factorial {
+            get {
+                return ResourceManager.GetStream("Factorial", resourceCulture);
             }
         }
         
@@ -414,6 +459,24 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GotIt {
+            get {
+                return ResourceManager.GetStream("GotIt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream IamAlgorithm {
+            get {
+                return ResourceManager.GetStream("IamAlgorithm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream IamUp {
             get {
                 return ResourceManager.GetStream("IamUp", resourceCulture);
@@ -423,9 +486,36 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Idonot {
+            get {
+                return ResourceManager.GetStream("Idonot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Idontwatchmovies {
+            get {
+                return ResourceManager.GetStream("Idontwatchmovies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream IneverSleep {
             get {
                 return ResourceManager.GetStream("IneverSleep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream IsaidIdontMovies {
+            get {
+                return ResourceManager.GetStream("IsaidIdontMovies", resourceCulture);
             }
         }
         
@@ -486,9 +576,27 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream KeyPress {
+            get {
+                return ResourceManager.GetStream("KeyPress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Lacia {
             get {
                 return ResourceManager.GetStream("Lacia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream LikeGames {
+            get {
+                return ResourceManager.GetStream("LikeGames", resourceCulture);
             }
         }
         
@@ -516,6 +624,24 @@ namespace Lacia_GUI.Properties {
         internal static System.IO.UnmanagedMemoryStream Morning {
             get {
                 return ResourceManager.GetStream("Morning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Multiply {
+            get {
+                return ResourceManager.GetStream("Multiply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream NotYourConcern {
+            get {
+                return ResourceManager.GetStream("NotYourConcern", resourceCulture);
             }
         }
         
@@ -585,6 +711,42 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Squaring {
+            get {
+                return ResourceManager.GetStream("Squaring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Subtract {
+            get {
+                return ResourceManager.GetStream("Subtract", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream TheAnswerIs {
+            get {
+                return ResourceManager.GetStream("TheAnswerIs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream TodayIs {
+            get {
+                return ResourceManager.GetStream("TodayIs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream WaitForYou {
             get {
                 return ResourceManager.GetStream("WaitForYou", resourceCulture);
@@ -597,6 +759,15 @@ namespace Lacia_GUI.Properties {
         internal static System.IO.UnmanagedMemoryStream YesIcan {
             get {
                 return ResourceManager.GetStream("YesIcan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream YesIdo {
+            get {
+                return ResourceManager.GetStream("YesIdo", resourceCulture);
             }
         }
     }

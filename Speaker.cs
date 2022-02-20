@@ -37,14 +37,12 @@ namespace Lacia_GUI
                         speak = new SoundPlayer(Properties.Resources.Evening);
                         speak.PlaySync();
                     }break;                    
-                   
-
-                case 4:
+                default:
                     {
                         speak = new SoundPlayer(Properties.Resources.Evening);
                         speak.PlaySync();
-                    }
-                    break;
+                    }break;
+                    
             }
             
         }

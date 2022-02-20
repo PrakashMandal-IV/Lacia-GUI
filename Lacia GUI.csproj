@@ -108,9 +108,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Browser.cs" />
+    <Compile Include="Classes\Calculator.cs" />
     <Compile Include="Classes\Counter.cs" />
     <Compile Include="Classes\Date.cs" />
     <Compile Include="Classes\Month.cs" />
+    <Compile Include="Classes\Numgen.cs" />
+    <Compile Include="Classes\Talkback.cs" />
     <Compile Include="Classes\Time.cs" />
     <Compile Include="RandomWelcome.cs" />
     <Compile Include="Speaker.cs" />
@@ -370,6 +373,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\YesIcan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idontwatchmovies.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsaidIdontMovies.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesIdo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LikeGames.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TodayIs.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IamAlgorithm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idonot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotYourConcern.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalInit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyPress.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CantDoThat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dividing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factorial.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GotIt.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multiply.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squaring.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subtract.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheAnswerIs.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

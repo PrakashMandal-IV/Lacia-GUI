@@ -26,7 +26,7 @@ namespace Lacia_GUI.Classes
             int firstDigits = year / 100;
             float divider = ((year / 100f) - firstDigits) * 100;
             int lastdigit = Convert.ToInt32(divider);
-            SoundPlayer its = new SoundPlayer(Properties.Resources.Its);
+            SoundPlayer its = new SoundPlayer(Properties.Resources.TodayIs);
             its.PlaySync();
             date.Spell(datee);
             mont.GetMonth(month);
