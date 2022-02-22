@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Speech.Synthesis;
 using System.Threading;
+using System.Speech.Recognition;
+using System.IO;
 
 namespace Lacia_GUI
 {
@@ -21,11 +23,12 @@ namespace Lacia_GUI
     {
         bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();
+        SpeechRecognitionEngine listner = new SpeechRecognitionEngine();
         public MainWindow()
         {
             InitializeComponent();
-            Status.Content = "Lacia";
             
+            StartListen();
             
         }
         private async void Start_Click(object sender, RoutedEventArgs e)
@@ -34,17 +37,31 @@ namespace Lacia_GUI
             if (!started)
             {
                 started = true;
-                await Task.Run(() => lacia.Laciainit());
-                
+                Status.Content = "Listening...";
+                await Task.Run(() => lacia.Laciainit());              
             }
         }
+
+        private void StartListen()
+        {
+            listner.SetInputToDefaultAudioDevice();
+            listner.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"D:\Audio\WordList.txt")))));
+            listner.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Speech_recognized);
+        }
+
+        private void Speech_recognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+            Input.Text = speech;
+        }
+
         private async void Input_TextChanged(object sender, TextChangedEventArgs e)
         {
             
             if (started)
-            {
-                
+            {              
                 string input = Input.Text;
+                listner.RecognizeAsync(RecognizeMode.Multiple);
                 await Task.Run(() => {                   
                     Lacia(input);
                     });

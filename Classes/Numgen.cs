@@ -19,7 +19,7 @@ namespace Lacia_GUI.Classes
         {"quintillion",1000000000000000000}
     };
 
-            public long ConvertToNumbers(string numberString)
+            public int ConvertToNumbers(string numberString)
             {
                 var numbers = Regex.Matches(numberString, @"\w+").Cast<Match>()
                         .Select(m => m.Value.ToLowerInvariant())
@@ -39,8 +39,10 @@ namespace Lacia_GUI.Classes
                     }
                     else acc += n;
                 }
-                return (total + acc) * (numberString.StartsWith("minus",
+                long temp = (total + acc) * (numberString.StartsWith("minus",
                         StringComparison.InvariantCultureIgnoreCase) ? -1 : 1);
+                int result = Convert.ToInt32(temp);
+            return result;
             }      
     }
 }

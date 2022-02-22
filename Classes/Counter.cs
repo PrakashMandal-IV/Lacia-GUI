@@ -30,6 +30,18 @@ namespace Lacia_GUI.Classes
                 speak = new SoundPlayer(Properties.Resources._100);
                 speak.PlaySync();
             }
+            else if(number >100)
+            {
+                int firstDigit = number/ 100;
+                int secondDigit = number%100;
+                int secndDigitintense = secondDigit / 10;
+                int thirddigit = number % 10;
+                Countninteen(firstDigit);
+                speak = new SoundPlayer(Properties.Resources._100);
+                speak.PlaySync();
+                tense(secndDigitintense);
+                Countninteen(thirddigit);
+            }
         }
 
         private void Countninteen(int input)

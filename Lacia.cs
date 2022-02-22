@@ -141,7 +141,7 @@ namespace Lacia_GUI
                         calMode = "add";
                         matched = true;
                     }
-                    else if (input.Contains("multipy"))
+                    else if (input.Contains("multiply"))
                     {
                         sound = new SoundPlayer(Properties.Resources.Multiply);
                         sound.PlaySync();
@@ -177,7 +177,7 @@ namespace Lacia_GUI
                         matched = true;
                     }                
                 }
-                else if (input.Contains("close") && input.Contains("calculator"))
+                else if (input.Contains("close"))
                 {
                     sound = new SoundPlayer(Properties.Resources.GotIt);
                     sound.PlaySync();
@@ -201,7 +201,7 @@ namespace Lacia_GUI
                 }
                 else
                 {
-                    Thread.Sleep(3000);
+                    Thread.Sleep(5000);
                     switch (calMode)
                     {
                         case "add":

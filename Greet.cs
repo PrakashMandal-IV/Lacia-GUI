@@ -18,6 +18,7 @@ namespace Lacia_GUI
             DateTime afternoon = DateTime.Parse("4 PM");
             DateTime evening = DateTime.Parse("7 PM");
             DateTime night = DateTime.Parse("4 AM");
+            /*
             int m1 = DateTime.Compare(current, night);     // 1 
             int m2 = DateTime.Compare(current, morning);   // -1
 
@@ -26,6 +27,8 @@ namespace Lacia_GUI
 
             int e1 = DateTime.Compare(current, afternoon); //1
             int e2 = DateTime.Compare(current, evening); //-1
+            */
+
             int result;
             if(time.Contains("AM"))
             {
