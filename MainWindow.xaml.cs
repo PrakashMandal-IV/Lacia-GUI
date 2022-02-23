@@ -38,6 +38,7 @@ namespace Lacia_GUI
             {
                 started = true;
                 Status.Content = "Listening...";
+                listner.RecognizeAsync(RecognizeMode.Multiple);
                 await Task.Run(() => lacia.Laciainit());              
             }
         }
@@ -60,8 +61,7 @@ namespace Lacia_GUI
             
             if (started)
             {              
-                string input = Input.Text;
-                listner.RecognizeAsync(RecognizeMode.Multiple);
+                string input = Input.Text;              
                 await Task.Run(() => {                   
                     Lacia(input);
                     });

@@ -14,7 +14,7 @@ namespace Lacia_GUI
         public string Search(string input)
         {
             SoundPlayer player;
-            string check = input.Replace("open",null).Replace("google",null).Replace("youtube", null).Replace("and",null).Replace("search",null).Replace(" ",null);           
+            string check = input.Replace("open",null).Replace("google",null).Replace("youtube", null).Replace("and",null).Replace("search",null);           
             string speak= "";
             if (input.Contains("google"))
             {
@@ -23,7 +23,7 @@ namespace Lacia_GUI
                 player = new SoundPlayer(Properties.Resources.Itsopen);
                 player.Play();
             }
-            else if (input.Contains("youtube") && (check == null))
+            else if (input.Contains("youtube"))
             {
                 System.Diagnostics.Process.Start("https://www.youtube.com");
                 player = new SoundPlayer(Properties.Resources.Itsopen);
