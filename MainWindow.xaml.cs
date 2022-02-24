@@ -23,7 +23,7 @@ namespace Lacia_GUI
     {
         bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();
-        SpeechRecognitionEngine listner = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine mic = new SpeechRecognitionEngine();
         public MainWindow()
         {
             InitializeComponent();
@@ -38,23 +38,23 @@ namespace Lacia_GUI
             {
                 started = true;
                 Status.Content = "Listening...";
-                listner.RecognizeAsync(RecognizeMode.Multiple);
+                mic.RecognizeAsync(RecognizeMode.Multiple);
                 await Task.Run(() => lacia.Laciainit());              
             }
         }
 
         private void StartListen()
         {
-            listner.SetInputToDefaultAudioDevice();
-            listner.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"D:\Audio\WordList.txt")))));
-            listner.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Speech_recognized);
+            mic.SetInputToDefaultAudioDevice();
+            mic.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"D:\Audio\WordList.txt")))));
+            mic.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Speech_recognized);           
         }
 
         private void Speech_recognized(object sender, SpeechRecognizedEventArgs e)
-        {
+        {           
             string speech = e.Result.Text;
-            Input.Text = speech;
-        }
+            Input.Text += speech;
+       }
 
         private async void Input_TextChanged(object sender, TextChangedEventArgs e)
         {

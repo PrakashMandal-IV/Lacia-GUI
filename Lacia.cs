@@ -16,7 +16,7 @@ namespace Lacia_GUI
     {
          Time time = new Time();
          Greet greet = new Greet();
-         Browser br = new Browser();
+         Open br = new Open();
          Speaker speak = new Speaker();
          Talkback say = new Talkback();
          Calculator calculate = new Calculator();
@@ -61,7 +61,7 @@ namespace Lacia_GUI
                     sound.PlaySync();
                     matched = true;
                 }
-                else if (input.Contains("initiate") && input.Contains("calculator"))
+                else if (input.Contains("open") && input.Contains("calculator"))
                 {
                     calInit = true;
                     sound = new SoundPlayer(Properties.Resources.CalInit);

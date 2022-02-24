@@ -8,9 +8,9 @@ using System.Threading;
 using System.Media;
 namespace Lacia_GUI
 {
-    class Browser
+    class Open
     {
-
+        string user = Environment.UserName;
         public string Search(string input)
         {
             SoundPlayer player;
@@ -23,15 +23,15 @@ namespace Lacia_GUI
                 player = new SoundPlayer(Properties.Resources.Itsopen);
                 player.Play();
             }
-            else if (input.Contains("youtube"))
+            else if (input.Contains("youtube") && input.Contains("and") && input.Contains("search"))
             {
-                System.Diagnostics.Process.Start("https://www.youtube.com");
+                System.Diagnostics.Process.Start("https://www.youtube.com"+check);
                 player = new SoundPlayer(Properties.Resources.Itsopen);
                 player.Play();
             }
             else if (input.Contains("spotify"))
             {
-                System.Diagnostics.Process.Start(@"C:\Users\Prakash\AppData\Roaming\Spotify\Spotify.exe");
+                System.Diagnostics.Process.Start(@"C:\Users\{0}\AppData\Roaming\Spotify\Spotify.exe",user);
                 player = new SoundPlayer(Properties.Resources.spotify);
                 player.Play();
             }
@@ -55,7 +55,7 @@ namespace Lacia_GUI
             }
             else if(input.Contains("discord"))
             {
-                System.Diagnostics.Process.Start(@"C:\Users\Prakash\Desktop\Discord.lnk");
+                System.Diagnostics.Process.Start(@"C:\Users\"+user+@"\Desktop\Discord.lnk");
                 player = new SoundPlayer(Properties.Resources.Discord);
                 player.Play();
             }

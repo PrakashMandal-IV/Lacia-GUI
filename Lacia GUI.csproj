@@ -107,7 +107,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Browser.cs" />
+    <Compile Include="Open.cs" />
     <Compile Include="Classes\Calculator.cs" />
     <Compile Include="Classes\Counter.cs" />
     <Compile Include="Classes\Date.cs" />
