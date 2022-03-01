@@ -81,7 +81,7 @@
     <AssemblyOriginatorKeyFile>Lacia GUI_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>L.ico</ApplicationIcon>
+    <ApplicationIcon>Lacia_Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -430,6 +430,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TheAnswerIs.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Lacia_Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

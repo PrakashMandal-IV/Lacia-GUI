@@ -11,7 +11,7 @@
     <StackPanel Name="AI">
 
         <Label x:Name="Logo" Width="200" Content="Lacia" Height="60px" FontSize="30" Foreground="White"  Opacity="50" FontFamily="Haettenschweiler" HorizontalContentAlignment="Center"/>
-        <Label x:Name="Status" Width="100" Height="40" FontSize="18" Foreground="White" RenderTransformOrigin="0.402,0.305"/>
+        
         <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged"  />
         <Button Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Margin="3px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal">
             <Button.Effect>
