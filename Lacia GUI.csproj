@@ -450,5 +450,11 @@
   <ItemGroup>
     <Resource Include="Images\Lacia_Logo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lacia_Activate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lacia_Activate.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

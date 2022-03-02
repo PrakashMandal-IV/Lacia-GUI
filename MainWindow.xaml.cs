@@ -7,6 +7,9 @@ using System.Windows.Media.Imaging;
 using System.Speech.Recognition;
 using System.IO;
 using System.Drawing;
+using System.Windows.Navigation;
+using System.Threading;
+using Brushes = System.Drawing.Brushes;
 
 namespace Lacia_GUI
 {
@@ -15,23 +18,30 @@ namespace Lacia_GUI
         bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();      
         SpeechRecognitionEngine listner = new SpeechRecognitionEngine();
+        string pass = "12345";       
         public MainWindow()
         {
             InitializeComponent();
-            StartListen();                     
-           
+            StartListen();
+            Start.Visibility = Visibility.Hidden;
+            Input.Visibility = Visibility.Hidden;
+            PasswordStatus.Visibility = Visibility.Hidden;
+            this.Background= new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "/Images/Lacia_Logo.jpg")));
         }
         
         private async void Start_Click(object sender, RoutedEventArgs e)
-        {
-            
-            if (!started)
-            {
-                started = true;
-                
-                listner.RecognizeAsync(RecognizeMode.Multiple);
-                await Task.Run(() => lacia.Laciainit());              
-            }
+        {                                           
+            this.Background = new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "/Images/Lacia_Activate.jpg")));
+            Start.Visibility = Visibility.Hidden;
+           
+            listner.RecognizeAsync(RecognizeMode.Multiple);
+                await Task.Run(() =>
+                {
+                    Thread.Sleep(500);
+                    lacia.Laciainit();
+                    });
+             started = true;
+            Input.Visibility = Visibility.Visible;
         }
 
         private void StartListen()
@@ -73,6 +83,23 @@ namespace Lacia_GUI
                 }
             }
         }
-        
+
+        private void loginButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(login.Text == pass)
+            {
+                Rect.Visibility = Visibility.Collapsed;
+                login.Visibility = Visibility.Collapsed;
+                loginButton.Visibility = Visibility.Collapsed;
+                PasswordLabel.Visibility = Visibility.Collapsed;
+                PasswordStatus.Visibility = Visibility.Collapsed;
+                Start.Visibility = Visibility.Visible;
+                
+            }
+            else
+            {
+                PasswordStatus.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

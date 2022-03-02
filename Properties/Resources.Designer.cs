@@ -594,9 +594,9 @@ namespace Lacia_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lacia_Background {
+        internal static System.Drawing.Bitmap Lacia_Activate {
             get {
-                object obj = ResourceManager.GetObject("Lacia_Background", resourceCulture);
+                object obj = ResourceManager.GetObject("Lacia_Activate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

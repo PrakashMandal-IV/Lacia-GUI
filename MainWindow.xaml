@@ -5,21 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lacia_GUI"
         mc:Ignorable="d"
-        Title="Lacia" Height="680" Width="1366" MaxHeight="680" MaxWidth="1366" MinHeight="680" MinWidth="1366" Visibility="Visible">
-    <Window.Background>
-        <ImageBrush ImageSource="/Images/Lacia_Logo.jpg" Stretch="Uniform"/>
-    </Window.Background>
+        Title="Lacia" Height="680" Width="1366" MaxHeight="680" MaxWidth="1366" MinHeight="680" MinWidth="1366" Background="Black">
+
+    <Grid>
+        <StackPanel x:Name="AI" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="0.3" TextChanged="Input_TextChanged" HorizontalAlignment="Stretch" Margin="0,10,790,10" />
+            <Button x:Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Background="DimGray" Foreground="AliceBlue" FontFamily="Segoe UI" FontSize="30" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="0,0,10,10">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
+        <Rectangle x:Name="Rect" HorizontalAlignment="Left" Height="526" Margin="980,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="336" Opacity="0.3" Fill="White"/>
+        <Label x:Name="PasswordLabel" Content="Password" Foreground="AliceBlue" HorizontalAlignment="Left" Margin="1108,232,0,0" VerticalAlignment="Top" Height="33" Width="85" FontSize="24px" FontFamily="Rockwell Condensed" FontStretch="ExtraExpanded" FontStyle="Oblique" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
+        <TextBox x:Name="login" FontSize="18" Background="AliceBlue" Foreground="White" TextChanged="Input_TextChanged" Opacity="0.4" Margin="1022,270,69,348"/>
+        <Label x:Name="PasswordStatus" Content="Invalid password" Foreground="#FFFF4B4B" HorizontalAlignment="Left" Margin="1098,459,0,0" VerticalAlignment="Top" Height="33" Width="112" FontSize="18" FontFamily="Bahnschrift Light Condensed" FontStretch="ExtraExpanded" FontStyle="Normal" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
+        <Button x:Name="loginButton" Click="loginButton_Click" ClickMode="Release" Content="Log In" Background="DimGray" Foreground="AliceBlue" FontFamily="Agency FB" FontSize="36" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="1090,497,136,101"/>
 
 
 
 
-    <StackPanel Name="AI" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged" HorizontalAlignment="Stretch" Margin="0,10,790,10" />
-        <Button x:Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="0,0,10,10">
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
-        </Button>
 
-    </StackPanel>
+    </Grid>
 </Window>
