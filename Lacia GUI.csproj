@@ -81,12 +81,16 @@
     <AssemblyOriginatorKeyFile>Lacia GUI_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Lacia_Logo.ico</ApplicationIcon>
+    <ApplicationIcon>Lacia_Ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Lacia_GUI.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Speech" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
@@ -433,6 +437,30 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Lacia_Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Lacia_Ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lacia_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lacia_Background.png.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lacia_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lacia_Logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lacia_GUI"
         mc:Ignorable="d"
-        Title="Lacia" Height="450" Width="800" Background="Black" Visibility="Visible">
+        Title="Lacia" Height="680" Width="1366" MaxHeight="680" MaxWidth="1366" MinHeight="680" MinWidth="1366" Visibility="Visible">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/Lacia_Logo.jpg" Stretch="Uniform"/>
+    </Window.Background>
 
 
-    <StackPanel Name="AI">
 
-        <Label x:Name="Logo" Width="200" Content="Lacia" Height="60px" FontSize="30" Foreground="White"  Opacity="50" FontFamily="Haettenschweiler" HorizontalContentAlignment="Center"/>
-        
-        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged"  />
-        <Button Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Margin="3px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal">
+
+    <StackPanel Name="AI" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+        <TextBox x:Name="Input" Width="400px" Height="30px" FontSize="20" Background="AliceBlue" Opacity="50" TextChanged="Input_TextChanged" HorizontalAlignment="Stretch" Margin="0,10,790,10" />
+        <Button x:Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" Width="150px" Height="40px" Background="DimGray" Foreground="AliceBlue" FontFamily="Haettenschweiler" FontSize="36" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="0,0,10,10">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
