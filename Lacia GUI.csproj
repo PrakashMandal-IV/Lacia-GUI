@@ -442,19 +442,7 @@
     <Resource Include="Lacia_Ico.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Main_Background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lacia_Background.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Image1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lacia_Background.png.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lacia_Background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.jpg" />
