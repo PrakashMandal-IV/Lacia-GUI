@@ -456,5 +456,8 @@
   <ItemGroup>
     <None Include="Resources\Lacia_Activate.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

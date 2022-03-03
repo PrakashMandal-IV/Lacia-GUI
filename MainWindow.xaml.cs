@@ -52,7 +52,7 @@ namespace Lacia_GUI
         private void StartListen()
         {
             listner.SetInputToDefaultAudioDevice();
-            listner.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"D:\Grammer.txt")))));
+            listner.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(Properties.Resources.WordList))));
             listner.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Speech_recognized);           
         }
 

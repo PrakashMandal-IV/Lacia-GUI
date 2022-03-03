@@ -764,6 +764,38 @@ namespace Lacia_GUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to lacia wake up
+        ///you go off
+        ///time
+        ///date
+        ///open discord
+        ///open spotify
+        ///open google
+        ///open youtube
+        ///lacia can you hear me
+        ///who are you
+        ///open calculator
+        ///add
+        ///answer
+        ///one
+        ///two
+        ///three
+        ///four
+        ///five
+        ///six
+        ///seven
+        ///eight
+        ///nine
+        ///ten
+        ///.
+        /// </summary>
+        internal static string WordList {
+            get {
+                return ResourceManager.GetString("WordList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream YesIcan {

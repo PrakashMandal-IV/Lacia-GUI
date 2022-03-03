@@ -268,6 +268,9 @@
   <data name="WaitForYou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WaitForYou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="WordList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextFile1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="YesIcan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YesIcan.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
