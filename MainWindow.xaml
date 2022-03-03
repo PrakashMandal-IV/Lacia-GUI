@@ -8,21 +8,21 @@
         Title="Lacia" Height="680" Width="1366" MaxHeight="680" MaxWidth="1366" MinHeight="680" MinWidth="1366" Background="Black">
 
     <Grid>
-        <Label x:Name="DateLabel" Foreground="white" Width="150" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,10,0" FontFamily="Franklin Gothic Medium" FontSize="18"/>
-        <Label x:Name="TimeLabel" Foreground="white" Width="90" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,35,10,0" FontSize="18" FontFamily="Franklin Gothic Medium"/>
-      
-            <TextBox x:Name="Input" Width="400px" Height="30px" VerticalAlignment="Bottom" FontSize="20" Background="AliceBlue" Opacity="0.3" TextChanged="Input_TextChanged" HorizontalAlignment="Stretch" Margin="0,2,0,10"/>
-            <Button x:Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150px" Height="40px" Background="DimGray" Foreground="AliceBlue" FontFamily="Segoe UI" FontSize="30" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="0,0,10,10">
-                <Button.Effect>
-                    <DropShadowEffect/>
-                </Button.Effect>
-            </Button>
-        
+        <Label x:Name="DateLabel" Foreground="white" Width="Auto" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,10,0" FontFamily="Franklin Gothic Medium" FontSize="18"/>
+        <Label x:Name="TimeLabel" Foreground="white" Width="Auto" Height="Auto" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,25,10,0" FontSize="18" FontFamily="Franklin Gothic Medium"/>
 
-        <Rectangle x:Name="Rect" HorizontalAlignment="Left" Height="510" Margin="994,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="322" Opacity="0.3" Fill="White"/>
-        <Label x:Name="PasswordLabel" Content="Password" Foreground="AliceBlue" HorizontalAlignment="Left" Margin="1108,232,0,0" VerticalAlignment="Top" Height="33" Width="85" FontSize="24px" FontFamily="Rockwell Condensed" FontStretch="ExtraExpanded" FontStyle="Oblique" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
+        <TextBox x:Name="Input" Width="400px" Height="30px" VerticalAlignment="Bottom" FontSize="20" Background="AliceBlue" Opacity="0.3" TextChanged="Input_TextChanged" HorizontalAlignment="Stretch" Margin="0,2,0,10"/>
+        <Button x:Name="Start" Click="Start_Click" ClickMode="Release" Content="Start" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150px" Height="40px" Background="DimGray" Foreground="AliceBlue" FontFamily="Segoe UI" FontSize="30" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="0,0,10,10">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+
+        <Rectangle x:Name="Rect" HorizontalAlignment="Right" Height="510" Stroke="Black" VerticalAlignment="Center" Width="322" Opacity="0.3" Fill="White" Margin="0,0,45,0"/>
+        <Label x:Name="PasswordLabel" Content="Password" Foreground="AliceBlue" HorizontalAlignment="Left" Margin="1113,232,0,0" VerticalAlignment="Top" Height="33" Width="84" FontSize="24px" FontFamily="Rockwell Condensed" FontStretch="ExtraExpanded" FontStyle="Oblique" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
         <TextBox x:Name="login" FontSize="18" Background=" AliceBlue" Foreground="Black" Opacity="0.4" Margin="1022,270,69,348"/>
-        <Label x:Name="PasswordStatus" Content="Invalid password" Foreground="#FFFF4B4B" HorizontalAlignment="Left" Margin="1098,459,0,0" VerticalAlignment="Top" Height="33" Width="112" FontSize="18" FontFamily="Bahnschrift Light Condensed" FontStretch="ExtraExpanded" FontStyle="Normal" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
+        <Label x:Name="PasswordStatus" Content="Invalid password" Foreground="#FFFF4B4B" HorizontalAlignment="Left" Margin="1099,459,0,0" VerticalAlignment="Top" Height="33" Width="112" FontSize="18" FontFamily="Bahnschrift Light Condensed" FontStretch="ExtraExpanded" FontStyle="Normal" FontWeight="Regular" RenderTransformOrigin="0.729,0.547" Background="{x:Null}"/>
         <Button x:Name="loginButton" Click="loginButton_Click" ClickMode="Release" Content="Log In" Background="DimGray" Foreground="AliceBlue" FontFamily="Agency FB" FontSize="36" FontStyle="Normal" RenderTransformOrigin="-0.377,0.688" Margin="1090,497,136,101"/>
 
 

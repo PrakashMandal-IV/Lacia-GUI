@@ -7,7 +7,7 @@ using System.Windows.Media.Imaging;
 using System.Speech.Recognition;
 using System.IO;
 using System.Windows.Navigation;
-
+using System.Windows.Threading;
 
 namespace Lacia_GUI
 {
@@ -16,19 +16,26 @@ namespace Lacia_GUI
         bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();      
         SpeechRecognitionEngine listner = new SpeechRecognitionEngine();
+        DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
         private string pass = "12345";       
         public MainWindow()
         {
             InitializeComponent();
-            StartListen();
-            DateLabel.Content = DateTime.Now.ToString("dd MMMM yyyy");
-            TimeLabel.Content = DateTime.Now.ToString("h:mm tt");
+            StartListen();        
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Start();        
             Start.Visibility = Visibility.Hidden;
             Input.Visibility = Visibility.Hidden;
             PasswordStatus.Visibility = Visibility.Hidden;
             this.Background= new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "/Images/Lacia_Logo.jpg")));
         }
-        
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            DateLabel.Content = DateTime.Now.ToString("dd MMMM yyyy");
+            TimeLabel.Content = DateTime.Now.ToString("h:mm tt");
+        }
+
         private async void Start_Click(object sender, RoutedEventArgs e)
         {                                                       
             Start.Visibility = Visibility.Hidden;          
