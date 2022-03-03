@@ -31,7 +31,7 @@ namespace Lacia_GUI
             }
             else if (input.Contains("spotify"))
             {
-                System.Diagnostics.Process.Start(@"C:\Users\{0}\AppData\Roaming\Spotify\Spotify.exe",user);
+                System.Diagnostics.Process.Start(@"C:\Users\"+user+@"\AppData\Roaming\Spotify\Spotify.exe");
                 player = new SoundPlayer(Properties.Resources.spotify);
                 player.Play();
             }

@@ -95,11 +95,10 @@ namespace Lacia_GUI
                     say.MoviesGames(input);
                     matched = true;
                 }
-                else if (input.Contains("open"))    //browser
-                {
-                    Thread.Sleep(5000);
+                else if (input.Contains("open"))    //open
+                {                  
                        LaciaVoice(br.Search(input));                      
-                        matched = true;                                                       
+                       matched = true;                                                       
                 }
 
                 else if ((input.Contains("you") && input.Contains("go off") || input.Contains("lacia") && input.Contains("go off"))&&(greet.DoGreet() == 3))
@@ -200,8 +199,7 @@ namespace Lacia_GUI
                     matched = true;
                 }
                 else
-                {
-                    Thread.Sleep(5000);
+                {                   
                     switch (calMode)
                     {
                         case "add":
@@ -242,7 +240,6 @@ namespace Lacia_GUI
                             break;
                     }
                 }
-
             }
             return matched;
         }

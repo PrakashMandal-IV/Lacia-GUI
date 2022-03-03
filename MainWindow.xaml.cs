@@ -6,10 +6,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Speech.Recognition;
 using System.IO;
-using System.Drawing;
 using System.Windows.Navigation;
-using System.Threading;
-using Brushes = System.Drawing.Brushes;
+
 
 namespace Lacia_GUI
 {
@@ -18,11 +16,13 @@ namespace Lacia_GUI
         bool started = false; //check if hello initiated
         Lacia lacia = new Lacia();      
         SpeechRecognitionEngine listner = new SpeechRecognitionEngine();
-        string pass = "12345";       
+        private string pass = "12345";       
         public MainWindow()
         {
             InitializeComponent();
             StartListen();
+            DateLabel.Content = DateTime.Now.ToString("dd MMMM yyyy");
+            TimeLabel.Content = DateTime.Now.ToString("h:mm tt");
             Start.Visibility = Visibility.Hidden;
             Input.Visibility = Visibility.Hidden;
             PasswordStatus.Visibility = Visibility.Hidden;
@@ -30,14 +30,12 @@ namespace Lacia_GUI
         }
         
         private async void Start_Click(object sender, RoutedEventArgs e)
-        {                                           
+        {                                                       
+            Start.Visibility = Visibility.Hidden;          
             this.Background = new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "/Images/Lacia_Activate.jpg")));
-            Start.Visibility = Visibility.Hidden;
-           
             listner.RecognizeAsync(RecognizeMode.Multiple);
                 await Task.Run(() =>
-                {
-                    Thread.Sleep(500);
+                {                    
                     lacia.Laciainit();
                     });
              started = true;
@@ -69,8 +67,7 @@ namespace Lacia_GUI
             }
         }
         public void Lacia(string input)
-        {
-           
+        {       
             if (input != null)
             {
                 if (lacia.LaciaBody(input))
@@ -83,7 +80,6 @@ namespace Lacia_GUI
                 }
             }
         }
-
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
             if(login.Text == pass)
@@ -93,8 +89,7 @@ namespace Lacia_GUI
                 loginButton.Visibility = Visibility.Collapsed;
                 PasswordLabel.Visibility = Visibility.Collapsed;
                 PasswordStatus.Visibility = Visibility.Collapsed;
-                Start.Visibility = Visibility.Visible;
-                
+                Start.Visibility = Visibility.Visible;              
             }
             else
             {
